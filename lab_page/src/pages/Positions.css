@@ -1,0 +1,30 @@
+.podoc {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.graduate, .contact-email {
+  padding-bottom: 30px;
+}
+
+.positions-title h1 {
+  font-size: 3em;  
+}
+
+/* .positions-contents p {
+  font-size: 1.8em;
+} */
+
+.positions-contents {
+  font-size: 1.4em;
+}
+
+.positions-contents h3 {
+  color: #8c8c8c;
+}
+
+.contact-email h1 {
+  color: #434BDB;
+  font-size: 3em;
+
+}

@@ -1,0 +1,97 @@
+.navbar {
+  background-color: #00001E;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.menu-box {
+  margin-right: 1em;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  margin-right: 3em;
+  padding: 1em;
+}
+
+.navbar-item {
+  margin-left: 20px;
+}
+
+.navbar-link {
+  color: #8c8c8c;
+  text-decoration: none;
+  font-size: 13px; 
+  padding: 15px 20px;
+  transition: color 0.3s ease; /* 글씨 전환 효과 추가 */
+  /* font-weight: bold; */
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  color: #fff;
+}
+
+
+
+/* 햄버거 메뉴 스타일 */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 1em;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 991px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 130px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #00001E;
+    padding: 0;
+    margin-right: 40px;
+  }
+  .navbar-menu.active {
+    display: flex;
+    top: 60px;
+    right: 0; 
+  }
+  .navbar-item {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+  }
+  .navbar-link {
+    display: block;
+    padding: 15px;
+  }
+  .hamburger {
+    display: flex;
+  }
+}

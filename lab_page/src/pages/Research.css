@@ -1,0 +1,61 @@
+.total-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #00001E;
+  color: white;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.page-title {
+  font-size: 1.6em;
+  color: #434BDB;
+  text-align: center;
+  margin: 60px 0 30px 0;
+}
+
+.main-container {
+  width: 80%;
+}
+
+.main-title {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.research-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.research-title h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.research-contents {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  color: #ccc;
+  font-size: 1.4em;
+}
+
+@media (max-width: 991px) {
+  .main-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .page-title, .main-title {
+    font-size: 2em;
+  }
+
+  .research-title h1 {
+    font-size: 1.25em;
+  }
+}

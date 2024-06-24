@@ -1,0 +1,111 @@
+.root {
+  background: white;
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 8px;
+}
+
+.chart-container, .table-container {
+  background-color: #ECECF4;
+  border-radius: 16px;
+  margin: 40px;
+  padding: 16px;
+  width: auto;
+  height: auto;
+  color: black;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-header-title {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  background-color: #ECECF4;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltip-content {
+  visibility: hidden;
+  background: black;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* 최상단 노드의 상단 선 제거 */
+.css-to7de5::before {
+  content: none !important;
+}
+
+/* 테이블 스타일 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #ECECF4;
+  /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #E2E2EA;
+  color: black;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px 15px;
+  border-color: #DCDFE2;
+}
+
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+} */
+
+/* tbody tr:last-of-type {
+  border-bottom: 2px solid #F6F7F9;
+} */
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}

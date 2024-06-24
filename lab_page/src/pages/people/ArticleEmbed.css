@@ -1,0 +1,30 @@
+.article-embed {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  background-color: #00001E;
+}
+
+.article-card {
+  background-color: #ECECF4;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article-card a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.article-card p {
+  color: #666;
+  margin: 0;
+}

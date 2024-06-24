@@ -1,0 +1,28 @@
+.office-box {
+  margin-top: 64px;
+
+}
+
+.office-box h1 {
+  color: #8c8c8c;
+}
+
+.address-box {
+  padding-top: 3vh;
+  padding-bottom: 1.8vh;
+}
+.address-box p {
+  font-size: 1.3em;
+}
+
+.email-box {
+  padding-bottom: 6vh;
+}
+
+.email-box p {
+  font-size: 1.3em;
+}
+
+.map-box {
+  margin-bottom: 60px;
+}
