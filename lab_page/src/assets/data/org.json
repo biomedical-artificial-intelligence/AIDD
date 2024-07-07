@@ -1,12 +1,25 @@
 {
-  "tradingName": "PROF.Sung-Wook Seo",
-
-  "organizationChildRelationship": [
-    {
-      "tradingName": "BIO LAB"
-    },
-    {
-      "tradingName": "DEV"
-    }
-  ]
+    "tradingName": "PROF.Sung-Wook Seo",
+    "organizationChildRelationship": [
+        {
+            "tradingName": "Data",
+            "organizationChildRelationship": []
+        },
+        {
+            "tradingName": "Development",
+            "organizationChildRelationship": []
+        },
+        {
+            "tradingName": "in Silico",
+            "organizationChildRelationship": []
+        },
+        {
+            "tradingName": "in Vitro",
+            "organizationChildRelationship": []
+        },
+        {
+            "tradingName": "in Vivo",
+            "organizationChildRelationship": []
+        }
+    ]
 }

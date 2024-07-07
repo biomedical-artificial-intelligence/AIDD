@@ -34,7 +34,7 @@ OrganizationChart.propTypes = {
       PropTypes.shape({
         tradingName: PropTypes.string.isRequired, // 자식 노드의 이름
       })
-    ).isRequired, // 자식 노드 배열 (필수)
+    ), // 자식 노드 배열 필수 아님
   }).isRequired, // org prop은 필수
   onNodeClick: PropTypes.func.isRequired,
 }

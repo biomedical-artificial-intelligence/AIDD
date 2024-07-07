@@ -36,7 +36,7 @@ Node.propTypes = {
       PropTypes.shape({
         tradingName: PropTypes.string.isRequired, // 자식 노드의 이름
       })
-    ).isRequired, // 자식 노드 배열 필수
+    ), // 자식 노드 배열 필수 아님
   }).isRequired, // o prop은 필수
   onNodeClick: PropTypes.func.isRequired, // 노드 클릭 핸들러 함수 필수
 }

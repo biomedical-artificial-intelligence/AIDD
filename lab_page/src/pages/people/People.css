@@ -2,15 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  background-color: #00001E;
+  background-color: #151515;
   color: white;
   min-height: 100vh;
   box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 12px;
 }
 
 .page-title {
-  font-size: 1.6em;
+  font-size: 1.6rem;
   color: #434BDB;
   text-align: center;
   /* width: 60%; */
@@ -19,14 +21,17 @@
 }
 
 .main-container {
-  width: 80%;
+  width: 100%;
+  max-width: 960px;
+  padding: 0 12px;
 }
 
 .people {
-  margin-bottom: 6vw;
+  /* margin-bottom: 6vw; */
+  margin-bottom: 58px;
 }
 
-.principal-title { 
+.principal-title {
   margin: 0;
   padding-top: 48px;
   /* margin-bottom: 40px; */
@@ -34,23 +39,32 @@
 }
 
 .principal-title h1 {
-  font-size: 1.7em;
+  font-size: 1.7rem;
   text-align: left;
-  padding-left: 0;
+  /* padding-left: 0; */
 }
 
-.photo-contents {
+.people-photo-contents {
   padding: 8px;
   display: flex;
-  justify-content: flex-start
+  /* flex-wrap: wrap; */
+  /* gap: 16px; */
 }
 
 .principal-photo {
-  width: 18vw;
+  /* width: 18vw; */
+  /* width: auto;
+  height: auto;
+  max-width: 360px;
+  max-height: 540px; */
+  width: 360px;
+  height: 540px;
   padding: 16px;
+  object-fit: cover;
 }
 
-.principal-contents {
+.principal-contents,
+.people-contents {
   padding-left: 16px;
   display: flex;
   flex-direction: column;
@@ -58,18 +72,18 @@
 }
 
 .introduce-principal {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   margin-bottom: 30px;
 }
 
 .profile h3 {
   color: #8c8c8c;
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 
 .profile p {
   color: #8c8c8c;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 .principal-media {
@@ -81,37 +95,50 @@
 
 .principal-video {
   /* width: 26vw; */
-  width: 56vw;
+  /* width: 56vw; */
+  width: 80%;
   display: flex;
   flex-direction: column;
   margin-top: 10px;
   /* padding: 16px */
+  justify-content: flex-start
 }
 
-.principal-video h3, .principal-news h3 {
+.principal-video h3,
+.principal-news h3 {
   color: #8c8c8c;
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 
 .videos-container {
   display: flex;
   /* flex-direction: column; */
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-evenly; */
   gap: 20px;
+  flex-wrap: wrap;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 45%;
+  padding-top: 25.25%;
+  /* 16:9 비율을 유지하기 위해 */
 }
 
 .profile-video {
-  /* width: 100%; */
-  width: 26vw;
-  height: 315px;
-  padding-bottom: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border: none;
 }
 
 .principal-news {
   margin-top: 10px;
-  width: 40vw;
+  /* width: 40vw; */
+  width: 600px;
 }
 
 /* .news-item {
@@ -121,18 +148,16 @@
 
 
 .people h1 {
-  font-size: 1.7em;
+  font-size: 1.7rem;
   text-align: left;
-  padding-left: 0;
+  /* padding-left: 0; */
 }
 
-.photo {
-  width: 13vw;
+.people-photo {
+  width: 200px;
+  height: 270px;
   padding: 16px;
-}
-
-.contents {
-  padding-left: 16px;
+  object-fit: cover;
 }
 
 .name-position h2 {
@@ -140,13 +165,130 @@
 }
 
 .bio-lab {
-  margin-top: 3vw;
-  margin-bottom: 3vw;
+  /* margin-top: 3vw;
+  margin-bottom: 3vw; */
+  margin-top: 29px;
+  margin-bottom: 29px;
 }
 
-.bio-lab h1, .dev h1 {
+.bio-lab h1,
+.dev h1 {
   color: #8c8c8c;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   text-align: left;
-  padding-left: 0;
+  /* padding-left: 0; */
+}
+
+/* 반응형 스타일 */
+@media (max-width: 991px) {
+  .main-container {
+    width: 90%;
+    padding: 0 10px;
+  }
+
+  .page-title {
+    font-size: 1.4rem;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .principal-title h1,
+  .people h1,
+  .bio-lab h1,
+  .dev h1 {
+    font-size: 1.4rem;
+  }
+
+  .principal-photo {
+    width: 200px;
+    height: auto;
+  }
+
+  .people-photo {
+    width: 150px;
+    height: auto;
+  }
+
+  .people-photo-contents {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .principal-contents,
+  .people-contents {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .principal-video {
+    width: 100%;
+  }
+
+  .video-wrapper {
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 비율을 유지하기 위해 */
+  }
+
+  .principal-news {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-title {
+    font-size: 1.2rem;
+  }
+
+  .principal-title h1,
+  .people h1,
+  .bio-lab h1,
+  .dev h1 {
+    font-size: 1.2rem;
+  }
+
+  .principal-photo {
+    width: 150px;
+    height: auto;
+  }
+
+  .people-photo {
+    width: 100px;
+    height: auto;
+  }
+
+  .people-photo-contents {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .principal-contents,
+  .people-contents {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .introduce-principal {
+    font-size: 1rem;
+  }
+
+  .profile p {
+    font-size: 1rem;
+  }
+
+  .principal-video {
+    width: 100%;
+  }
+
+  .video-wrapper {
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 비율을 유지하기 위해 */
+  }
+
+  .principal-news {
+    width: 100%;
+  }
 }

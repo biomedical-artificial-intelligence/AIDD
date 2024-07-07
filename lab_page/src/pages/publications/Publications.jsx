@@ -1,9 +1,15 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async'
 import './Publications.css'
 
 const Publications = () => {
   return (
     <div className="total-container">
+      <Helmet>
+        <title>Publications - SilicoWorks Lab</title>
+        <meta name="description" content="Publications of Sung-Wook Seo" />
+        <link rel="canonical" href="https://biomedical-artificial-intelligence.github.io/AIDD/publications" />
+      </Helmet>
       <div className="page">
         <h1 className="page-title">Publications</h1>
       </div>

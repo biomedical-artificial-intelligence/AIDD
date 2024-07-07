@@ -12,7 +12,7 @@ const TeamTable = ({ data }) => {
         <tr>
           <th>부서</th>
           <th>성명</th>
-          <th>직급</th>
+          {/* <th>직급</th> */}
           <th>담당업무</th>
         </tr>
       </thead>
@@ -21,7 +21,7 @@ const TeamTable = ({ data }) => {
           <tr key={index}>
             <td>{item.부서}</td>
             <td>{item.성명}</td>
-            <td>{item.직급}</td>
+            {/* <td>{item.직급}</td> */}
             <td>{item.담당업무}</td>
           </tr>
         ))}
@@ -34,8 +34,9 @@ const TeamTable = ({ data }) => {
 TeamTable.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
-      name: PropTypes.string.isRequired, // 데이터 항목의 이름
-      detail: PropTypes.string.isRequired, // 데이터 항목의 세부 정보
+      부서: PropTypes.string.isRequired, 
+      성명: PropTypes.string.isRequired, 
+      담당업무: PropTypes.string.isRequired, 
     })
   ).isRequired, // data prop은 필수
 }
