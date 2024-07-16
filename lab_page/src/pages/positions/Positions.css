@@ -1,0 +1,95 @@
+/* .podoc {
+  padding-top: 60px;
+  padding-bottom: 30px;
+} */
+
+.main-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* .positions-contents p {
+  font-size: 1.8em;
+} */
+
+.positions-contents {
+  font-size: 1.4rem;
+}
+
+.positions-contents h3 {
+  color: #8c8c8c;
+}
+
+.positions-email {
+  padding-bottom: 30px;
+}
+
+.positions-email h1 {
+  color: #434BDB;
+  font-size: 3rem;
+
+}
+
+/* Tablet 버전 (768px - 991px) */
+@media (max-width: 991px) {
+  .main-container {
+    width: 90%;
+    padding: 0 10px;
+  }
+
+  .page-title {
+    font-size: 1.4rem;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .positions-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .positions-contents,
+  .positions-contents h3 {
+    font-size: 1.2rem;
+  }
+
+  .positions-email h1 {
+    /* color: #434BDB; */
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile 버전 (최대 767px) */
+@media (max-width: 767px) {
+  .main-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .page-title {
+    font-size: 1.2rem;
+  }
+
+  .main-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .positions-title h1 {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+
+  .positions-contents,
+  .positions-contents h3 {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .positions-email h1 {
+    /* color: #434BDB; */
+    font-size: 2rem;
+  }
+}
