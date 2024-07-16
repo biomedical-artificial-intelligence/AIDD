@@ -15,7 +15,7 @@ const CausalInference = () => {
       <Helmet>
         <title>Causal Inference</title>
         <meta name="description" content="Causal Inference information for SilicoWorks Lab" />
-        <link rel="canonical" href="https://biomedical-artificial-intelligence.github.io/AIDD-dev/research/causal-inference" />
+        <link rel="canonical" href="https://biomedical-artificial-intelligence.github.io/AIDD/research/causal-inference" />
       </Helmet>
 
       <h1 className="page-title">Research</h1>
