@@ -8,7 +8,7 @@ const Contact = () => {
       <Helmet>
         <title>Contact - SilicoWorks Lab</title>
         <meta name="description" content="Contact information for SilicoWorks Lab, including office location and email address." />
-        <link rel="canonical" href="https://biomedical-artificial-intelligence.github.io/AIDD-dev/contact" />
+        <link rel="canonical" href="https://biomedical-artificial-intelligence.github.io/AIDD/contact" />
       </Helmet>
       <div className="page">
         <h1 className="page-title">Contact</h1>

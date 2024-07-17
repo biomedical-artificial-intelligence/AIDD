@@ -39,7 +39,7 @@ const People = () => {
       <Helmet>
         <title>People - SilicoWorks Lab</title>
         <meta name="description" content="People of SilicoWorks Lab" />
-        <link rel="canonical" href="https://biomedical-artificial-intelligence.github.io/AIDD-dev/people" />
+        <link rel="canonical" href="https://biomedical-artificial-intelligence.github.io/AIDD/people" />
       </Helmet>
       <div className="page">
         <h1 className="page-title">People</h1>

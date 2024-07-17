@@ -11,7 +11,7 @@ const Gallery = () => {
       <Helmet>
         <title>Gallery - SilicoWorks Lab</title>
         <meta name="description" content="Gallery for SilicoWorks Lab" />
-        <link rel="canonical" href="https://biomedical-artificial-intelligence.github.io/AIDD-dev/gallery" />
+        <link rel="canonical" href="https://biomedical-artificial-intelligence.github.io/AIDD/gallery" />
       </Helmet>
       <div className="page">
         <h1 className="page-title">Gallery</h1>

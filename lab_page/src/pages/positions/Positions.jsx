@@ -8,7 +8,7 @@ const Positions = () => {
       <Helmet>
         <title>Positions - SilicoWorks Lab</title>
         <meta name="description" content="Position information for SilicoWorks Lab" />
-        <link rel="canonical" href="https://biomedical-artificial-intelligence.github.io/AIDD-dev/positions" />
+        <link rel="canonical" href="https://biomedical-artificial-intelligence.github.io/AIDD/positions" />
       </Helmet>
       <div className="page">
         <h1 className="page-title">Positions</h1>
@@ -16,8 +16,8 @@ const Positions = () => {
       <div className="main-container">
         <div className="podoc">
           <h1 className="main-title">
-              Postdoctoral Research Fellow Position in AI-Driven Protein
-              Structure Analysis
+            Postdoctoral Research Fellow Position in AI-Driven Protein
+            Structure Analysis
           </h1>
           <div className="positions-contents">
             <h3>Institution: </h3>

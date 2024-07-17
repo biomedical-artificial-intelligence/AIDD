@@ -8,7 +8,7 @@ const Publications = () => {
       <Helmet>
         <title>Publications - SilicoWorks Lab</title>
         <meta name="description" content="Publications of Sung-Wook Seo" />
-        <link rel="canonical" href="https://biomedical-artificial-intelligence.github.io/AIDD-dev/publications" />
+        <link rel="canonical" href="https://biomedical-artificial-intelligence.github.io/AIDD/publications" />
       </Helmet>
       <div className="page">
         <h1 className="page-title">Publications</h1>
