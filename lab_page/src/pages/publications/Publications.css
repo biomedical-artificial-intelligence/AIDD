@@ -1,0 +1,53 @@
+.publications p {
+  font-size: 1.3em;
+}
+
+/* Tablet 버전 (768px - 991px) */
+@media (max-width: 991px) {
+  .main-container {
+    width: 90%;
+    padding: 0 10px;
+  }
+
+  .page-title {
+    font-size: 1.4rem;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  /* .research-title h1 {
+    font-size: 1.5rem;
+  } */
+
+  .publications p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile 버전 (최대 767px) */
+@media (max-width: 767px) {
+  .main-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .page-title {
+    font-size: 1.2rem;
+  }
+
+  .main-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  /* .research-title h1 {
+    font-size: 1.25rem;
+  } */
+
+  .publications p {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
