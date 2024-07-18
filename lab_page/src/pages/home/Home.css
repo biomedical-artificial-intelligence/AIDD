@@ -1,0 +1,113 @@
+.home-container {
+    display: flex;
+    /* align-items: flex-end;
+    justify-content: flex-start; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #151515;
+
+    background-image: url(../../assets/images/home/a.png);
+    /* background: url(../../assets/images/home/a.png) no-repeat center; */
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: fadeIn 2s ease-in-out;
+
+    /* margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; */
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.home-title h1 {
+    /* font-size: 5em; */
+    /* margin: 0;
+    padding: 16%; */
+    /* color: white; */
+
+    text-align: center;
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    animation: animate 8s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+    0% {
+        background-position: 200%;
+    }
+
+    100% {
+        background-position: -200%;
+    }
+}
+
+/* Tablet 버전 (768px - 991px) */
+@media (max-width: 991px) {
+    .home-container {
+        font-size: 1.8em;
+        /* padding: 12%; */
+        align-items: center;
+        /* 수직 중앙 정렬 */
+        justify-content: center;
+        /* 수평 중앙 정렬 */
+    }
+
+    .home-title h1 {
+        font-size: 1.8em;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+/* Mobile 버전 (최대 767px) */
+@media (max-width: 767px) {
+    .home-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-title h1 {
+        font-size: 1.6em;
+        padding: 0;
+        text-align: center;
+    }
+
+    @media (max-width: 480px) {
+        .home-container {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .home-title h1 {
+            font-size: 1em;
+            text-align: center;
+        }
+    }
+}
