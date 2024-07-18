@@ -8,7 +8,7 @@ const Home = () => {
       <Helmet>
         <title>Home - Your Company</title>
         <meta name="description" content="Welcome to the homepage of SilicoWorks Lab." />
-        <link rel="canonical" href="https://biomedical-artificial-intelligence.github.io/AIDD-dev/" />
+        <link rel="canonical" href="https://biomedical-artificial-intelligence.github.io/AIDD/" />
       </Helmet>
       <div className='home-title'>
         <h1>Finding Clarity Through the Fog of Uncertainty</h1>

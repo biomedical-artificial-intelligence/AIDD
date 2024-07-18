@@ -8,8 +8,8 @@ import { Helmet } from 'react-helmet-async';
 // 노드별 데이터를 설정
 const nodeData = {
   'Data': [
-    {부서: 'Data', 성명: '조윤희', 담당업무: "1. Patient's Data Collection 2. Whole RNA seq. 3. Data Analysis"},
-    {부서: 'Data', 성명: '이수진', 담당업무: "1. Patient's Data Collection 2. Whole RNA seq. 3. Data Analysis"},
+    { 부서: 'Data', 성명: '조윤희', 담당업무: "1. Patient's Data Collection 2. Whole RNA seq. 3. Data Analysis" },
+    { 부서: 'Data', 성명: '이수진', 담당업무: "1. Patient's Data Collection 2. Whole RNA seq. 3. Data Analysis" },
   ],
   'Development': [
     { 부서: 'Development', 성명: '김지수', 담당업무: '1. PPI simulation system development 2. HPC management 3. Prediction Modeling 4. system and algorithm development' },
@@ -43,7 +43,7 @@ const Organization = () => {
       <Helmet>
         <title>Organization - SilicoWorks Lab</title>
         <meta name="description" content="Organization information for SilicoWorks Lab" />
-        <link rel="canonical" href="https://biomedical-artificial-intelligence.github.io/AIDD-dev/organization" />
+        <link rel="canonical" href="https://biomedical-artificial-intelligence.github.io/AIDD/organization" />
       </Helmet>
       <div className="page">
         <h1 className="page-title">Organization</h1>
