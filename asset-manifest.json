@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AIDD/static/css/main.265fcb9c.css",
-    "main.js": "/AIDD/static/js/main.e7d997ee.js",
+    "main.css": "/AIDD/static/css/main.bf816bf1.css",
+    "main.js": "/AIDD/static/js/main.c4024c7f.js",
     "static/js/453.d2ff6b00.chunk.js": "/AIDD/static/js/453.d2ff6b00.chunk.js",
     "static/media/INHYEOK_SONG.jpg": "/AIDD/static/media/INHYEOK_SONG.6cc2130d931f3b755a13.jpg",
     "static/media/geunhyebae.jpg": "/AIDD/static/media/geunhyebae.340999dd0d53424d3350.jpg",
@@ -20,12 +20,12 @@
     "static/media/CHOI_JIYOON.jpg": "/AIDD/static/media/CHOI_JIYOON.1f83d9a70e406a171a33.jpg",
     "static/media/SHIM_DAMI.jpg": "/AIDD/static/media/SHIM_DAMI.10b42e5d7444e2b7c002.jpg",
     "index.html": "/AIDD/index.html",
-    "main.265fcb9c.css.map": "/AIDD/static/css/main.265fcb9c.css.map",
-    "main.e7d997ee.js.map": "/AIDD/static/js/main.e7d997ee.js.map",
+    "main.bf816bf1.css.map": "/AIDD/static/css/main.bf816bf1.css.map",
+    "main.c4024c7f.js.map": "/AIDD/static/js/main.c4024c7f.js.map",
     "453.d2ff6b00.chunk.js.map": "/AIDD/static/js/453.d2ff6b00.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.265fcb9c.css",
-    "static/js/main.e7d997ee.js"
+    "static/css/main.bf816bf1.css",
+    "static/js/main.c4024c7f.js"
   ]
 }
