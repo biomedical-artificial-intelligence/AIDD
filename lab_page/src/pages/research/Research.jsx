@@ -13,7 +13,7 @@ const Research = () => {
       <Helmet>
         <title>Research - SilicoWorks Lab</title>
         <meta name="description" content="Research information for SilicoWorks Lab" />
-        <link rel="canonical" href="https://biomedical-artificial-intelligence.github.io/AIDD-dev/research" />
+        <link rel="canonical" href="https://biomedical-artificial-intelligence.github.io/AIDD/research" />
       </Helmet>
       <h1 className="page-title">Research</h1>
       <div className="main-container">
