@@ -106,13 +106,15 @@ table {
 thead {
     background-color: #E2E2EA;
     color: black;
-    text-align: left;
+    text-align: center;
 }
 
 th,
 td {
     padding: 12px 15px;
     border-color: #DCDFE2;
+    text-align: center;
+    vertical-align: middle;
 }
 
 /* tbody tr {

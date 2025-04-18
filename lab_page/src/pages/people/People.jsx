@@ -6,12 +6,14 @@ import seo from '../../assets/images/people/seo.jpg'
 import leejiyeon from '../../assets/images/people/leejiyeon.png'
 import jiyoonchoi from '../../assets/images/people/CHOI_JIYOON.jpg'
 import damishim from '../../assets/images/people/SHIM_DAMI.jpg'
-import yunhuijo from '../../assets/images/people/JO_YUNHUI.jpg'
-import hyeinjeong from '../../assets/images/people/JEONG_HYEIN.jpg'
 import jisookim from '../../assets/images/people/jisookim.jpg'
 import inhyeoksong from '../../assets/images/people/INHYEOK_SONG.jpg'
 import geunhyebae from '../../assets/images/people/geunhyebae.jpg'
 import sujinlee from '../../assets/images/people/sujinlee.jpg'
+import minjeongkim from '../../assets/images/people/minjeongkim.jpg'
+import juwonchoi from '../../assets/images/people/juwonchoi.jpg'
+import jeonghokang from '../../assets/images/people/jeonghokang.jpg'
+
 
 const People = () => {
   const articles = [
@@ -173,29 +175,29 @@ const People = () => {
                 </div>
               </div>
             </div>
-            {/* 조윤희 */}
+            {/* 김민정 */}
             <div className="people-photo-contents">
-              <img src={yunhuijo} className="people-photo" />
+              <img src={minjeongkim} className="people-photo" />
               <div className="people-contents">
                 <div className="name-position">
-                  <h2>Yun-Hui Jo, CRC</h2>
+                  <h2>Min-Jeong Kim, Researcher</h2>
                 </div>
                 <div className="profile">
                   <h3>Education</h3>
-                  <p>2022 Graduated from the Bachelor of Health Sciences</p>
+                  <p>2023 Graduated with a Master of Science degree</p>
                 </div>
               </div>
             </div>
-            {/* 정혜인 */}
+            {/* 최주원 */}
             <div className="people-photo-contents">
-              <img src={hyeinjeong} className="people-photo" />
+              <img src={juwonchoi} className="people-photo" />
               <div className="people-contents">
                 <div className="name-position">
-                  <h2>Hye-In Jeong, Researcher</h2>
+                  <h2>Ju-Won Choi, CRC</h2>
                 </div>
                 <div className="profile">
                   <h3>Education</h3>
-                  <p>2023 Graduated with a Bachelor of Science degree</p>
+                  <p>2025.02 Graduated from the Department of Nursing at Chung-Ang University</p>
                 </div>
               </div>
             </div>
@@ -251,6 +253,21 @@ const People = () => {
                   <p>
                     2021.02 Graduated from Kyungpook National University with
                     Bachelor of Science in Mathematics
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* 강정호 */}
+            <div className="people-photo-contents">
+              <img src={jeonghokang} className="people-photo" />
+              <div className="people-contents">
+                <div className="name-position">
+                  <h2>Jeong-Ho Kang, Researcher</h2>
+                </div>
+                <div className="profile">
+                  <h3>Education</h3>
+                  <p>
+                    2024.02 Graduated from the Department of Electrical Engineering, Namseoul University
                   </p>
                 </div>
               </div>
