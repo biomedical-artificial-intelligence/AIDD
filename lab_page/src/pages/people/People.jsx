@@ -221,26 +221,6 @@ const People = () => {
                 </div>
               </div>
             </div>
-            {/* 송인혁 */}
-            <div className="people-photo-contents">
-              <img src={inhyeoksong} className="people-photo" />
-              <div className="people-contents">
-                <div className="name-position">
-                  <h2>In-Hyeok Song, Researcher</h2>
-                </div>
-                <div className="profile">
-                  <h3>Education</h3>
-                  <p>
-                    2022.02 Master&apos;s Degree in Physics and Analytical
-                    Chemistry, Graduated from Hannam University
-                  </p>
-                  <p>
-                    2020.02 Graduated from Hannam University with
-                    Bachelor&apos;s degree - Major: Chemistry, Minor: Big Data
-                  </p>
-                </div>
-              </div>
-            </div>
             {/* 배근혜 */}
             <div className="people-photo-contents">
               <img src={geunhyebae} className="people-photo" />
@@ -276,7 +256,7 @@ const People = () => {
         </div>
 
         <div className="people">
-          <h1>GRADUATE STUDNETS</h1>
+          <h1>GRADUATE STUDENTS</h1>
           {/* 수진 */}
           <div className="people-photo-contents">
             <img src={sujinlee} className="people-photo" />
