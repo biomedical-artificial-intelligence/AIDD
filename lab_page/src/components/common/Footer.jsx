@@ -5,9 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>
-          Copyright ©2024 SilicoWorks Lab All rights reserved
-        </p>
+        <p>© 2025 SilicoWorks Lab. All rights reserved.</p>
       </div>
     </footer>
   )

@@ -2,13 +2,134 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--sw-bg);
 }
 
 .app-contents {
-  margin-top: 64px;
+  margin-top: 65px;
 }
 
 body {
-  background-color: #151515;
-  color: #ffffff;
+  background-color: var(--sw-bg);
+  color: var(--sw-text);
+}
+
+/* ============================================================
+   Global silicoworks-style overrides for legacy page styles
+   ============================================================ */
+
+/* Neutralize the old dark container used by every page */
+.total-container {
+  background-color: transparent !important;
+  color: var(--sw-text) !important;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+/* Headings — unify */
+.total-container h1,
+.total-container h2,
+.total-container h3 {
+  color: var(--sw-text);
+}
+
+.page-title {
+  color: var(--sw-accent) !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 16px 0 12px !important;
+}
+
+.main-title {
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  color: var(--sw-text) !important;
+  margin-bottom: 40px !important;
+  letter-spacing: -0.02em;
+}
+
+/* Research/content cards */
+.research-contents,
+.positions-contents {
+  background-color: var(--sw-surface) !important;
+  color: var(--sw-text-soft) !important;
+  border: 1px solid var(--sw-border);
+  border-radius: var(--sw-radius-lg);
+  padding: 24px !important;
+  font-size: 1rem !important;
+  line-height: 1.7;
+  box-shadow: var(--sw-shadow-sm);
+}
+
+.research-title h1 {
+  font-size: 1.5rem !important;
+  font-weight: 700;
+  color: var(--sw-text) !important;
+  margin-bottom: 12px !important;
+}
+
+.details-btn {
+  background-color: var(--sw-accent) !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  border-radius: var(--sw-radius) !important;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.details-btn:hover {
+  background-color: var(--sw-accent-hover) !important;
+  transform: translateY(-1px);
+}
+
+.details-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(59 130 246 / 0.25);
+}
+
+/* People page tweaks */
+.profile h3,
+.profile p {
+  color: var(--sw-text-muted) !important;
+}
+
+.principal-title h1 {
+  color: var(--sw-text) !important;
+}
+
+/* Organization page chart/table boxes */
+.chart-container,
+.table-container {
+  background-color: var(--sw-surface) !important;
+  border: 1px solid var(--sw-border);
+  border-radius: var(--sw-radius-lg);
+  color: var(--sw-text) !important;
+  box-shadow: var(--sw-shadow-sm);
+}
+
+/* Contact */
+.office-box h1,
+.positions-contents h3 {
+  color: var(--sw-text-muted) !important;
+}
+
+.positions-email h1 {
+  color: var(--sw-accent) !important;
+}
+
+/* Publications/paragraphs */
+.publications p {
+  color: var(--sw-text-soft);
+}
+
+/* Downside (footer) */
+.app-container-downside {
+  background-color: var(--sw-surface);
+  border-top: 1px solid var(--sw-border);
 }

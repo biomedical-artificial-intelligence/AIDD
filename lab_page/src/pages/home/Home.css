@@ -1,126 +1,176 @@
 .home-container {
-    display: flex;
-    /* align-items: flex-end;
-    justify-content: flex-start; */
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #151515;
-
-    background-image: url(../../assets/images/home/a.png);
-    /* background: url(../../assets/images/home/a.png) no-repeat center; */
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    background-attachment: fixed;
-    animation: fadeIn 2s ease-in-out;
-
-    /* margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #000; */
-
+  background-color: var(--sw-bg);
+  min-height: calc(100vh - 65px);
+  padding: 0;
+  animation: fadeIn 0.6s ease-in-out;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-.home-title h1 {
-    /* font-size: 5em; */
-    /* margin: 0;
-    padding: 16%; */
-    /* color: white; */
-
-    text-align: center;
-    position: relative;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    font-size: 2em;
-    letter-spacing: 4px;
-    overflow: hidden;
-    background: linear-gradient(90deg, #000, #fff, #000);
-    background-repeat: no-repeat;
-    background-size: 200%;
-    /* animation: animate 8s linear infinite; */
-    /* 효과 처음만, 텍스트 색상 변경 애니메이션 추가 */
-    animation: animate 8s linear forwards, textColor 0s linear 7s forwards;
-    /* animation: animate 8s linear forwards, textColorChange 0s linear 8s forwards; */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+/* Hero */
+.hero-section {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 96px 24px 64px;
+  text-align: center;
 }
 
-@keyframes animate {
-    0% {
-        background-position: 200%;
-    }
-
-    100% {
-        background-position: 0;
-    }
+.hero-eyebrow {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--sw-accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: var(--sw-accent-soft);
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 24px;
 }
 
-@keyframes textColor {
-    0% {
-        -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    }
-
-    100% {
-        -webkit-text-fill-color: rgba(255, 255, 255, 1);
-    }
+.hero-title {
+  font-size: 3.25rem;
+  line-height: 1.15;
+  font-weight: 800;
+  color: var(--sw-text);
+  margin: 0 0 20px;
+  letter-spacing: -0.03em;
 }
 
-/* Tablet 버전 (768px - 991px) */
+.hero-subtitle {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--sw-text-muted);
+  max-width: 640px;
+  margin: 0 auto 36px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: var(--sw-radius);
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.btn-primary {
+  background-color: var(--sw-accent);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: var(--sw-accent-hover);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: var(--sw-shadow);
+}
+
+.btn-secondary {
+  background-color: var(--sw-surface);
+  color: var(--sw-text);
+  border-color: var(--sw-border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--sw-border-strong);
+  color: var(--sw-text);
+  transform: translateY(-1px);
+}
+
+/* Features */
+.feature-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px 96px;
+}
+
+.feature-section-title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--sw-text);
+  margin: 0 0 40px;
+  letter-spacing: -0.02em;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px;
+  background-color: var(--sw-surface);
+  border: 1px solid var(--sw-border);
+  border-radius: var(--sw-radius-lg);
+  box-shadow: var(--sw-shadow-sm);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--sw-accent-soft);
+  box-shadow: var(--sw-shadow);
+  color: inherit;
+}
+
+.feature-card-icon {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--sw-radius);
+  background-color: var(--sw-accent-soft);
+  color: var(--sw-accent);
+}
+
+.feature-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--sw-text);
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--sw-text-muted);
+  margin: 0;
+}
+
 @media (max-width: 991px) {
-    .home-container {
-        font-size: 1.8em;
-        /* padding: 12%; */
-        align-items: center;
-        /* 수직 중앙 정렬 */
-        justify-content: center;
-        /* 수평 중앙 정렬 */
-    }
-
-    .home-title h1 {
-        font-size: 1.8em;
-        padding: 0;
-        text-align: center;
-    }
+  .hero-section { padding: 72px 20px 48px; }
+  .hero-title { font-size: 2.5rem; }
+  .hero-subtitle { font-size: 1.05rem; }
 }
 
-/* Mobile 버전 (최대 767px) */
 @media (max-width: 767px) {
-    .home-container {
-        align-items: center;
-        justify-content: center;
-    }
-
-    .home-title h1 {
-        font-size: 1.6em;
-        padding: 0;
-        text-align: center;
-    }
-
-    @media (max-width: 480px) {
-        .home-container {
-            align-items: center;
-            justify-content: center;
-        }
-
-        .home-title h1 {
-            font-size: 1em;
-            text-align: center;
-        }
-    }
+  .hero-section { padding: 56px 16px 40px; }
+  .hero-title { font-size: 2rem; }
+  .hero-subtitle { font-size: 1rem; }
+  .feature-section { padding: 24px 16px 72px; }
+  .feature-section-title { font-size: 1.4rem; }
 }
